@@ -6,7 +6,7 @@
 }
 
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,21 +41,7 @@ header{
     transition: .5s ease;
 }
 
-.btn-talk{
-    color: whitesmoke;
-    text-decoration: none;
-    background: turquoise;
-    border-radius: 10px;
-    border: 2px solid turquoise;
-    font-weight: 500;
-    transition: .4s ease;
-}
 
-.btn-talk:hover{
-    color: turquoise;
-    background: transparent;
-    
-}
 
 .home{
     position: relative;
@@ -190,3 +176,28 @@ header{
     color: turquoise;
 }
 
+form {
+    display: grid;
+    grid-gap: 1px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,23 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
+
+  // Email configuration
+  $to = "webbtumelo@gmail.com"; // Replace with your email address
+  $subject = "New Contact Form Submission";
+  $body = "Name: $name\nEmail: $email\nMessage: $message";
+  $headers = "From: $email";
+
+  // Send email
+  if (mail($to, $subject, $body, $headers)) {
+    echo "Thank you for your message. We'll be in touch shortly!";
+  } else {
+    echo "Sorry, something went wrong. Please try again later.";
+  }
+}
+?>

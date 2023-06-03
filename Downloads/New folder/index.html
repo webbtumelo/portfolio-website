@@ -9,18 +9,18 @@
     <title>Portfolio website</title>
 </head>
 <body>
+    <!--Header-->
     <header>
         <h2 class="logo"><span>W</span>ebb.Dev</h2>
         <nav class="navigation">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Portfolio</a>
-        <a href="#">Blog</a>
         <a href="#">Contact</a>
         </nav>
-        <a href="#" class="btn-talk">Let's Talk</a>
+        
     </header>
-
+<!--Home-Content-->
     <section class="home">
         <div class="content">
             <h2>Hi, I'm <span>Tumelo Webb</span></h2>
@@ -30,13 +30,15 @@
                 <a href="#">Hire Me</a>
                 <a href="#">See Projects</a>
             </div>
+            <!-- Social Icons -->
             <div class="social-icons">
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-solid fa-envelope"></i></a>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
-            </div>
+                <a href="https://www.linkedin.com/tumelo-webb-9" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/tumelowebb" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com/tumelowebb" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:tumelowebb@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.github.com/webbtumelo" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+    
         </div>
         </section>
         <!------------about------------>
@@ -48,12 +50,13 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>Meet Tumelo a self-taught Data Analyst and Software Developer from South Africa who is currently enrolledin the ALX Program. With his expertise in Python and SQL, He has become a highly sought-after professional in the Data Analytics industry. Despite not having formal education, his skills and knowledge allowed him to prune and hone them as he has an amazing portfolio. During his time in the ALX program, He was exposed to cutting-edge technologies and gained valuable experience working on real-world projects with a diverse team of developers from different backgrounds.</p>
+                        <p>Meet Tumelo a self-taught Data Analyst and Software Developer from South Africa who is currently enrolled in the ALX Program. With his expertise in Python and SQL, He has become a highly sought-after professional in the Data Analytics industry. Despite not having formal education, his skills and knowledge allowed him to prune and hone them as he has an amazing portfolio. During his time in the ALX program, He was exposed to cutting-edge technologies and gained valuable experience working on real-world projects with a diverse team of developers from different backgrounds.</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link">Skills</p>
                             <p class="tab-links active-link">Experience</p>
                             <p class="tab-links active-link">Education</p>
                         </div>
+                        <!--Tab-Contents-->
                         <div class="tab-contents">
                             <ul>
                                 <li><span>Web Development</span><br> Web App Development</li>
@@ -62,10 +65,28 @@
                                 <li><span>Python and Javascript</span><br> Back-End Development</li>
                             </ul>
                         </div>
-                    </div>
+                       
+ <!-- Section form -->
+ <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="send_email.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+                    </div>
                 </div>
             </div>
-        </div>   
+        </div>
+      
 </body>
 </html>
