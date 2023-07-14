@@ -421,3 +421,52 @@ margin-top: auto;
     font-size: 18px;
     border-radius: 10px;
   }
+
+  /*social icons*/
+
+  .social-icons{
+    position: absolute;
+    bottom: 130px;
+}
+.social-icons a{
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    background: darkcyan;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 35px;
+    border: 2px solid whitesmoke;
+    outline: 2px solid turquoise;
+    transition: .3s;
+
+}
+.social-icons a:hover{
+    transform: translateY(-5px);
+}
+
+.btn-group a{
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: darkcyan;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 139, 97);
+    font-weight: 500;
+    transition: .4s;
+
+}
+.btn-group a:nth-child(2){
+    color: turquoise;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+.btn-group a:hover:nth-child(1){
+    color: whitesmoke;
+    background: turquoise;
+}
+.btn-group a:hover:nth-child(2){
+    color: whitesmoke;
+    background: turquoise; 
+}
