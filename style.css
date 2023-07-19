@@ -5,6 +5,7 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -153,8 +154,9 @@ span.m-left
 
 .profile-image img
 {
-    width: 450px;
+    width: 440px;
     margin-top: 50px;
+
 }
 
 .about
@@ -406,8 +408,8 @@ margin-top: auto;
 .containers a
 {
   text-align:center;
- text-underline-position: below;
-  margin-top: 20px;
+  text-underline-position: below;
+  margin-top: 34px;
 }
 
  .container-ab {
@@ -417,16 +419,37 @@ margin-top: auto;
     background-color: grey;
     color: #707070;
     text-decoration: none;
-    text-align: center;
     font-size: 18px;
     border-radius: 10px;
   }
+  .container-ab a:hover img {
+    border: 2px solid darkcyan;
+    opacity: 0.8;
+  }
+
+  .container-ab a:hover img {
+    animation: bounce 0.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
 
   /*social icons*/
 
   .social-icons{
     position: absolute;
-    bottom: 130px;
+    bottom: 10px;
 }
 .social-icons a{
     display: inline-block;
