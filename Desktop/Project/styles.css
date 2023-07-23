@@ -1,0 +1,150 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: grey;
+}
+::selection{
+    background: coral;
+    color: #fff;
+}
+img{
+    pointer-events: none;
+}
+/* =========Landing page ==========*/
+
+.landingPage{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+.landingPage .topSide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.landingPage .topSide .logo{
+    width: 100px;
+    font-size: 2rem;
+    color: coral;
+    cursor: default;
+}
+
+.landingPage .topSide .logo span {
+    font-size: 38px;
+    color: whitesmoke;
+}
+.landingPage .topSide .freelancerName p{
+    font-size: 30px;
+    color: rgb(246, 153, 119);
+    text-align: right;
+}
+.landingPage .navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+}
+.landingPage .navBar a.link{
+    transition: all 0.2s ease-in-out;
+}
+.landingPage .navBar a.link:hover{
+    color: coral;
+    text-decoration: underline;
+}
+.landingPage .mainImage{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    max-width: 50%;
+}
+.landingPage .mainImage img{
+    max-width: 100%;
+}
+.landingPage .bottomLeftSide{
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+}
+.landingPage .bottomLeftSide p.job{
+    font-size: 32px;
+    color: coral;
+}
+.landingPage .bottomLeftSide p.location{
+    font-size: 21px;
+    color: white;
+}
+.landingPage .bottomLeftSide p.loction span
+{
+    color: coral;
+}
+.landingPage .bottomRightSide 
+{
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.landingPage .bottomRightSide .social-icons a
+ {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    background: coral;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 2px solid white;
+    outline: 2px solid coral;
+    transition: .3s;
+
+}
+.landingPage  .bottomRightSide .social-icons a:hover{
+    transform: translateY(-5px);
+}
+/*============Responsive==========*/
+@media screen and (max-width: 768px){
+.landingPage .topSide .freelancerName {
+    display: none;
+}
+.landingPage .mainImage {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.landingPage .bottomLeftSide{
+    bottom: 6rem;
+}
+}
+@media screen and (max-width: 768px){
+    .landingPage .mainImage {
+        display: none;
+    }
+}
+
+    
+
