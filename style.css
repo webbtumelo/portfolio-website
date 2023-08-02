@@ -1,10 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
-
 
 html{
     scroll-behavior: smooth;
@@ -12,6 +10,30 @@ html{
 
 .container{
     padding: 0 100px 0 100px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+ul li::after{
+    content: ' ';
+    width: 0%;
+    height: 10px;
+    background: darkcyan;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+ul li:hover::after{
+    width: 100%;
 }
 
 nav ul,
@@ -52,11 +74,7 @@ header a,
     color: #707070;
 }
 
-li
-{
-    list-style: none;
-    margin-left: 30px;
-}
+
 
 a
 {
